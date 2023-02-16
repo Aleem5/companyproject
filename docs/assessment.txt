@@ -1,0 +1,39 @@
+Please find the assessment questions attached with this mail assessment should be submitted within monday.
+Django Application Development: 
+    a. Let us assume we are creating a Django REST based application to display Employee-Manager  relationships. 
+    b. When the REST call is made, the application would get all employees with their manager  name and return in JSON format. 
+Example: 
+    Employee is A -> Manager is B 
+    Employee is B -> Manager is C 
+    ….. this continues till CEO who does not have a manager 
+
+Points to be considered: 
+    1. Everybody is an employee in the organization including managers. 
+    2. Every employee has a manager except the CEO who does not have a manager. 3. There are only three fields that are of interest here: Employee ID, Employee name, Manager  name. 
+
+Expectations: 
+    1. Create a Django application with one GET REST API which when called would return a list of  Employee ID, Employee Name, Manager Name. 
+        Example: 
+            [ 
+            { 
+                "emp_id": 1, 
+                "emp_name": "A",
+                "manager_name": "B" 
+            }, 
+            { 
+                "emp_id": 2, 
+                "emp_name": "C", 
+                "manager_name": "B" 
+            }, 
+                ……………… 
+            ] 
+    2. The Employee-Manager relationship should be modelled in the models file with proper primary  and foreign key relationships 
+
+    3. From the above point, you could write the same query using SQL syntax and place the query in a  separate .sql file.
+       This will not be executed as part of the Django application and will be used  only by us to validate. 
+    4. The data should be queried and return to the views file
+    5. The whole project should be sent to us so that we can execute and validate
+    6. SQlite should be used so that the data can be sent to us along with the project.
+    7. We’ll also validate the readability of the code.
+       So, kindly make the design as understandable as  possible.
+
